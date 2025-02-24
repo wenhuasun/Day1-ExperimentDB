@@ -117,6 +117,8 @@ Write the required steps for installing the dependencies for this code in the "S
 | Command | Description  |
 | :-- | :-- |
 | `git remote -v` | See the name and urls of all remote repositories |
+| `git remote add <name> <url>` | Add a new git remote, if needed.  Name can be anything, URL should be a github repo. |
+| `git remote remove <name>` | Remove a git remote, if needed. |
 | `git branch` | See the names or all branches.  The one with a star next to it is the active branch. |
 | `git push origin main` | Push the branch called "main" to the remote called "origin" |
 
@@ -137,4 +139,4 @@ Write the required steps for installing the dependencies for this code in the "S
 
 ### Done!
 
-Done! Now a more-reproduc
+Now a more-reproducible application has been made, and contributed to the original author--a collaboration on open-source software!
