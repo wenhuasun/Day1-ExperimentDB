@@ -15,7 +15,7 @@ This contains a web server that launches an interface for logging subjects and s
 Run the app directly with a 
 
 ```bash
-streamlit run experiment_db
+streamlit run experiment_db.py
 ```
 
 ## Exercise
