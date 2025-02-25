@@ -143,3 +143,25 @@ Now a more-reproducible application has been made, and contributed to the origin
 
 ## Contributors
 - wenhua sun 25.02.25
+
+- installing the dependencies
+1. clone the repository in local working directory
+git clone https://github.com/wenhuasun/Day1-ExperimentDB.git experiment.db
+cd experiment_db
+open VScode to open this folder
+2. create environment
+conda create -p ./venv 
+conda activate ./venv
+conda install python=3.10 ## if install python 3.10 to align with streamlit as 3.12 not working with streamlit
+3. install required independencies
+conda env export -f environment.yaml
+4. check dependency file is working
+conda env remove -p ./venv
+conda env create -p ./venv -f environment.yaml
+5. commit dependency
+git config --global user.name "wenhuasun"  ##first time need to do
+git config --global user.email "WenhuaSun_@hotmail.com"  ##first time need to do
+git status ## see git noticing changes
+git add environment.yaml
+git commit -am "message" ## commit all changes can message change into other words
+git log ## see recent commits
